@@ -1,0 +1,19 @@
+{
+  "name": "cse341-finalproject",
+  "version": "1.0.0",
+  "description": "Final API Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyjmills/cse341-finalproject.git"
+  },
+  "author": "Tyler Mills",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyjmills/cse341-finalproject/issues"
+  },
+  "homepage": "https://github.com/tyjmills/cse341-finalproject#readme"
+}
