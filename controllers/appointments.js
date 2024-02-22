@@ -23,12 +23,13 @@ const getSingle = async (req, res) => {
 const createappointment = async (req, res) => {
     //#swagger.tags=['appointments']
     const appointment = {
-        username: req.body.username,
-        phone: req.body.phone,
-        email: req.body.email,
-        fullname: req.body.fullname,
-        favcolor: req.body.favcolor,
-        state: req.body.state
+        type: req.body.type,
+        date: req.body.date,
+        time: req.body.time,
+        provider: req.body.provider,
+        patient_lastname: req.body.patient_lastname,
+        patient_firstname: req.body.patient_firstname,
+        phone_number: req.body.phone_number
     };
     const response = await mongodb.getDatabase().db().collection('appointment').insertOne(appointment);
     if (response.acknowledged) {
@@ -42,12 +43,13 @@ const  updateappointment = async (req, res) => {
     //#swagger.tags=['appointments']
     const appointmentId = new ObjectId(req.params.id);
     const appointment = {
-        username: req.body.username,
-        phone: req.body.phone,
-        email: req.body.email,
-        fullname: req.body.fullname,
-        favcolor: req.body.favcolor,
-        state: req.body.state
+        type: req.body.type,
+        date: req.body.date,
+        time: req.body.time,
+        provider: req.body.provider,
+        patient_lastname: req.body.patient_lastname,
+        patient_firstname: req.body.patient_firstname,
+        phone_number: req.body.phone_number
     };
     const response = await mongodb.getDatabase().db().collection('appointments').replaceOne({ _id: appointmentId }, appointment);
     if (response.modifiedCount > 0) {
