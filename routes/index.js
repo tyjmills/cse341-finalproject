@@ -8,5 +8,8 @@ router.get('/', (req, res) => {
 });
 
 router.use('/appointments', require('./appointments'));
+router.use('/locations', require('./locations'));
+router.use('/patients', require('./patients'));
+router.use('/providers', require('./providers'));
 
 module.exports= router;
