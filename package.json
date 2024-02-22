@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tyjmills/cse341-finalproject/issues"
   },
-  "homepage": "https://github.com/tyjmills/cse341-finalproject#readme"
+  "homepage": "https://github.com/tyjmills/cse341-finalproject#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
